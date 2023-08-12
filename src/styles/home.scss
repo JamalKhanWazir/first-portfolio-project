@@ -42,16 +42,16 @@
   padding: 500px 0;
   @include flexRowCenter;
   margin-top: -200px;
-  
+
   > img {
     width: 30%;
     animation: imgUp 0.7s linear infinite alternate;
   }
-  
+
   > div {
     width: 50%;
     padding: 0 50px 0 50px;
-    
+
     p {
       color: $first;
       letter-spacing: 2px;
@@ -74,7 +74,7 @@
   margin-top: -200px;
   @include flexRow;
   justify-content: flex-end;
-  
+
   > div {
     width: 70%;
     height: 80vh;
@@ -90,13 +90,13 @@
       width: 15rem;
       color: $demwhite;
     }
-    
+
     > p {
       padding: 2rem;
       letter-spacing: 1px;
       word-spacing: 5px;
       line-height: 170%;
-      font: italic 100 1.2rem $text2;
+      font: italic 100 1.2rem $text1;
     }
   }
 }
@@ -108,7 +108,7 @@
   display: flex;
   margin-top: -200px;
   // justify-content: flex-end;
-  
+
   > div {
     background-color: $first;
     border-radius: 0 200px 200px 0;
@@ -116,20 +116,20 @@
     height: 70vh;
     padding: 2rem;
     @include flexColumnCenter;
-    
+
     > h1 {
-      color: $first;
+      color: $dark;
       text-transform: uppercase;
       width: 140px;
-      border-bottom: 2px solid $first;
+      border-bottom: 2px solid $dark;
       padding: 0.5rem;
     }
-    
+
     > article {
       @include flexRow;
       margin: 2rem 0;
       flex-wrap: wrap;
-      
+
       > div {
         animation: imgUp 0.7s linear infinite alternate;
         margin: 1rem;
@@ -139,18 +139,19 @@
         border-radius: 50%;
         @include flexColumnCenter;
         color: $first;
-        cursor: pointer;  
+        cursor: pointer;
         transition: all 0.5s;
         &:hover {
-          filter: invert(1); 
+          filter: invert(1);
         }
-        
+
         svg {
           font-size: 4rem;
         }
-        
-        p {
-          font: 900 1.25rem $text2;
+
+        a p {
+          color: $first;
+          font: 500 1.25rem $text1;
         }
       }
     }

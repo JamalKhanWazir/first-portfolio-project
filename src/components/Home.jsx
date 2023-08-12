@@ -21,9 +21,10 @@ const Home = () => {
         <img src={vg} alt="Graphics" />
         <div>
           <p>
-            We are your one and only solution to the tech problems you face
-            every day. We are leading tech company whose aim is to increase the
-            problem solving ability in children.
+            We are your one and only solution to the best graphic design projects what 
+            service do you want to make any animation or video editing with a high professional 
+            expertise. We will make you a high appriciable product that you and your friends will 
+            love it.
           </p>
         </div>
       </div>
@@ -61,7 +62,9 @@ const Home = () => {
               }}
             >
               <AiFillGoogleCircle />
-              <p>Google</p>
+              <a href="https://www.google.com" target="blank">
+                <p>Google</p>
+              </a>
             </div>
 
             <div
@@ -70,7 +73,9 @@ const Home = () => {
               }}
             >
               <AiFillAmazonCircle />
-              <p>Amazon</p>
+              <a href="https://www.amazon.com" target="blank">
+                <p>Amazon</p>
+              </a>
             </div>
 
             <div
@@ -79,16 +84,22 @@ const Home = () => {
               }}
             >
               <AiFillYoutube />
-              <p>Youtube</p>
+              <a href="https://www.youtube.com" target="blank">
+                <p>Youtube</p>
+              </a>
             </div>
-
             <div
               style={{
                 animationDelay: "1s",
               }}
             >
               <AiFillInstagram />
-              <p>Instagram</p>
+              <a
+                href="https://www.instagram.com/jamalkhan_jk_official/"
+                target="blank"
+              >
+                <p>Instagram</p>
+              </a>
             </div>
           </article>
         </div>
