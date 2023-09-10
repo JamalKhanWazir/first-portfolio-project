@@ -10,7 +10,7 @@
     position: absolute;
     color: $first;
     @include flexColumnCenter;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     padding: 2rem;
@@ -29,8 +29,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: no-repeat center/auto url("../assets/w2.jpg");
-    // filter: blur(1px);
+    background: no-repeat center/auto url("../assets/picterr.jpg");
+    // filter: blur(4px);
     border-radius: 0 0 100px 100px;
   }
 }

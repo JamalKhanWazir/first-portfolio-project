@@ -63,7 +63,7 @@
 }
 
 @media screen and (max-width: 415px) {
-  nav {
+  .navbar {
     .logo-name {
       font: 900 1rem $text2;
       // font-size: small;
@@ -75,7 +75,11 @@
 
     .hamburger-menu {
       display: block;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      > a {
+        color: white;
+      }
+
     }
 
     .menu-link.horizontal-menu {
@@ -83,15 +87,15 @@
       position: absolute;
       display: grid;
       justify-content: start;
-      background-color: $fourth;
+      background-color: $navbar;
       margin-top: 22rem;
       width: 90%;
-      box-shadow: 1px 2px 5px $first;
+      // box-shadow: 1px 2px 5px $first;
 
       > a {
-        color: $dark;
+        color: $first;
         margin: 1rem;
-        font: 900 1rem $text2;
+        font: 500 1rem $text2;
 
         &:hover {
           color: $third;
@@ -208,7 +212,7 @@
 
 
 // @media screen and (max-width: 391px) {
-//   nav {
+//   .navbarbar {
 //     .logo-name {
 //       font: 900 1rem $text2;
 //       // font-size: small;

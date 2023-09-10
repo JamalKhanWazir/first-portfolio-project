@@ -6,11 +6,23 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const [navbar, setNavbar] = useState(false);  
+
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <nav>
-      <Link to={"/#home"}>
-        <h1 className="logo-name">JK Production</h1>
-      </Link>
+    <nav className= {navbar ? "navbar active" : "navbar" }>
+      <HashLink to={"/#home"}>
+        <h1 className="logo-name">JK.</h1>
+      </HashLink>
 
       <main className={showMenu ? "menu-link horizontal-menu" : "menu-link"}>
         <HashLink to={"/#home"}>Home</HashLink>
